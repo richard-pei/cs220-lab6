@@ -1,0 +1,10 @@
+language: c
+
+jobs:
+  include:
+    - stage: build
+    - script: make -C lab6/hello all
+  include:
+    - stage: test
+    - script: lab6/hello/hello
+
