@@ -7,8 +7,10 @@ branches:
 jobs:
   include:
     - stage: build
-    - script: make -C hello clean all
+    - script: 
+        - make -C hello clean all
   include:
     - stage: test
-    - script: hello/hello
+    - script: 
+        - hello/hello
 
