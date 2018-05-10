@@ -15,7 +15,7 @@ branches:
 jobs:
   include:
     - stage: build
-    - script: make -C lab6/hello all
+    - script: make -C lab6/hello clean all
   include:
     - stage: test
     - script: lab6/hello/hello
